@@ -52,7 +52,7 @@ export const getTrendingProducts = (): Product[] => {
             id: 6,
             name: "Portable Bluetooth Speaker",
             description: "Compact and powerful speaker with deep bass",
-            image: "BuyBuddy/images/speaker.jpg",
+            image: "images/speaker.jpg",
             prices: {
               amazon: 89.99,
               flipkart: 84.99

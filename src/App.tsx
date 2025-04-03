@@ -1,16 +1,17 @@
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-// import Navbar  from './Navbar';
-// import  TrendingProducts  from './TrendingProducts';
-// import { ChatBot } from "../components/ChatBot"; 
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import "./index.css";
+
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
-        <HomePage/>
-      {/* <Navbar />
-      <TrendingProducts /> */}
-      {/* <ChatBot /> */}
-    </div>
+    <Routes>
+      <Route path="/home" element={<HomePage />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+    </Routes>
   );
-}
+};
 
 export default App;
